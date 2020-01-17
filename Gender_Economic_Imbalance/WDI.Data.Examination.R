@@ -891,53 +891,6 @@ dev.female.population.total <- country.dev$female.population.total
 dev.population.total <- country.dev$population.total
 dev.teen.mothers.percent.women.15.19 <- country.dev$teen.mothers..women15.19
 
-#dat3 <- econ.rows[econ.super$rownumbers,]
-
-#econfull <- mutate(econset2, na.omit = TRUE)
-#econfull
-
-#linear.model <- lm(econset2$GINI.index.of.household.equality ~ econset2$`GDP.US$` + econset2$`GDP.US$`)
-#summary(linear.model)
-
-#plot(econfull$GINI.index.of.household.equality, econfull$country.surface.area.sq.km, na.omit = TRUE)
-
-# Lag country to Country_name by 1...then if they are equal then lag other data points
-# if they are not equal then NA on lag columns
-
-#Coffee1 <- ifelse(lag(econset2$Country_name) == econset2$country,1, 0)
-#View(Coffee1)
-#Coffee <- lapply(econset2[econset2], Coffee1)
-
-
-#econset2$Country_name <- with(ffSL, ifelse(grepl("Single", ffSL$events), 1,
-#                              ifelse(grepl("Double", ffSL$events), 1,
-#                                     ifelse(grepl("Triple", ffSL$events), 1, 
-#                                            ifelse(grepl("Home Run", ffSL$events), 1, 0))))) %>% 
-#  as.factor()
-
-#Coffee <- function(fac){
-#	if (lag(fac) == "X")
-#		fac = 5
-#	else 
-#		fac = 6
-#}
-
-#Markers <- ifelse(Coffee1 == 0, NA, lag(SABRMerge$pitch_type))
-#Markers
-
-#Coffee1 <- ifelse(lag(AtBatType) == "X", 0, 1)
-#Coffee1
-#head(NewMerge,11)
-
-#Coffee <- lapply(NewMerge[85], Coffee1)
-
-
-# Encoding country code
-#wdi$wbcode <- as.numeric(as.factor(wdi$wbcode))
-
-# Lag for DAC contributions. See what these contributions are being spent on later
-#wdi$lag.value <- NA
-
 
 # Testing country pollution by income
 emit <- wdi$EN_ATM_CO2E_KD_GD   # pollution emmitted
