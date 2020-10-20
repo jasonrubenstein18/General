@@ -113,7 +113,6 @@ Machado.Model.5 <- glm(Machado.attendance ~ Machado.play + Machado.rank + Machad
 summary(Machado.Model.5)
 confint(Machado.Model.5)
 # It is clear from this model that Harper is more valuable to the Nationals in terms of attendance than Machado is to the Orioles. From that, we can conclude that Harper would have a greater impact on team attendance than Machado
-s
 
 
 # Printing Model Results
